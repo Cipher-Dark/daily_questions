@@ -14,7 +14,7 @@ def reverseNumber(num: int) -> int:
     return rev
 
 
-def panlindromNumber(num1: int, num2: int) -> bool:
+def panlindromeNumber(num1: int, num2: int) -> bool:
     if (num1 == num2):
         return True
     else:
@@ -23,7 +23,7 @@ def panlindromNumber(num1: int, num2: int) -> bool:
 
 num = int(input("Enter an five digit number : "))
 print(f"Reverse of {num} is {reverseNumber(num)}")
-if panlindromNumber(num, reverseNumber(num)):
+if panlindromeNumber(num, reverseNumber(num)):
     print("Number is Palindrome")
 else:
     print(f"{num} and {reverseNumber(num)} are not same")
