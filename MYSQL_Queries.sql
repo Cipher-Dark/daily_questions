@@ -23,6 +23,7 @@ insert into books values( 1,'The Nameskar', 'Jhumpa', 'Lahri', 2003, 32, 291) ,
 (4,'Interpreter of Maladies','Jhumpa','Lahiri',1996,97,198),
 (5,'A Hologram of the king: A Novel','Dave','Eggers',2012,154,352),
 (6,'The Circle','Dave','Eggers',2013,28,504),
+
 (7,'The Amazing Adventures of Kaviler & Clay','Michael','Chabon',2000,68,634),
 (8,'Just kids','Patiie','Smith',2010,55,304),
 (9,'A Heartbreaking Word of Staggering Genius','Dave','Eggers',2001,104,437),
@@ -35,5 +36,17 @@ insert into books values( 1,'The Nameskar', 'Jhumpa', 'Lahri', 2003, 32, 291) ,
 (16,'Consider The Lobster','David','Foster Wallace',2005,92,143);
 
 select * from books;
+# for changing the value withoud using the primary key 
+SET SQL_SAFE_UPDATES = 0;
 
-select title, releaseyear, authorFirstName, authorLastName from books;
+#Write SQL query to fetch title, release_year, author_fanme, author_lname from books table.
+
+select title, releaseyear, authorFirstName, authorLastName from books; 
+
+#Write the SQL queries to update the author_last_name whose write the book "Coraline"
+update  books  set authorLastName = 'Bisht' where title = 'Coraline';
+
+
+#Write the SQL queries to fetch unique author_first_name and author_last_name?
+select distinct authorFirstName, authorLastName from books;
+
