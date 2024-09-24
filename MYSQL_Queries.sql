@@ -36,3 +36,4 @@ insert into books values( 1,'The Nameskar', 'Jhumpa', 'Lahri', 2003, 32, 291) ,
 
 select * from books;
 
+select title, releaseyear, authorFirstName, authorLastName from books;
