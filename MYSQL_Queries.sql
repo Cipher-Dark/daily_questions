@@ -63,3 +63,10 @@ SELECT UPPER(REVERSE('Why does my cat look at me with such hatered?')) AS revers
 
 #Write a sql query to print original author_last_name and reverse_last_name as the forward and backward names.
 select authorLastName as forwardName, reverse(authorLastName) as backwordName from books;
+
+#Write a sql queries to combine the author_first_name and author_last_name and print with title, release_year and stock_quantity.
+select concat(authorFirstName,' ', authorLastName) as name, title, releaseYear, stockQuantity from books;
+
+#Write a sql queries to combine the author_first_name and author_last_name in caps and print with title, pages and stock_quantity.
+select upper(concat(authorFirstName,' ', authorLastName)) as name, title, releaseYear, stockQuantity from books;
+
