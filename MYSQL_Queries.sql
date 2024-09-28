@@ -50,3 +50,12 @@ update  books  set authorLastName = 'Bisht' where title = 'Coraline';
 #Write the SQL queries to fetch unique author_first_name and author_last_name?
 select distinct authorFirstName, authorLastName from books;
 
+
+#Delete books details where books pages are less than 200
+delete  from books where pages <200;
+
+#Write a query to fetch only those records from the books table whose pages is above 400.
+
+select * from books where pages >400
+
+
