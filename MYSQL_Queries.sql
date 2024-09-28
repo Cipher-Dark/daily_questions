@@ -56,6 +56,10 @@ delete  from books where pages <200;
 
 #Write a query to fetch only those records from the books table whose pages is above 400.
 
-select * from books where pages >400
+select * from books where pages >400;
 
+#Write a sql query to Reverse and uppercase the following sentence: "Why does my cat look at me with such hatered?"
+SELECT UPPER(REVERSE('Why does my cat look at me with such hatered?')) AS reversed_uppercase_sentence;
 
+#Write a sql query to print original author_last_name and reverse_last_name as the forward and backward names.
+select authorLastName as forwardName, reverse(authorLastName) as backwordName from books;
