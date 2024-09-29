@@ -70,3 +70,10 @@ select concat(authorFirstName,' ', authorLastName) as name, title, releaseYear, 
 #Write a sql queries to combine the author_first_name and author_last_name in caps and print with title, pages and stock_quantity.
 select upper(concat(authorFirstName,' ', authorLastName)) as name, title, releaseYear, stockQuantity from books;
 
+
+#Write a query to concat title and release year like that "title was release in release year" the value of title and release year fetch from the books table.
+select concat(title, " was released in ", releaseYear) from books;
+
+#Write a query to print book title and length of each title
+select title, length(title) as length from books;
+
