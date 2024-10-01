@@ -77,3 +77,10 @@ select concat(title, " was released in ", releaseYear) from books;
 #Write a query to print book title and length of each title
 select title, length(title) as length from books;
 
+#sql query to show only 10 character of title followed by ... and first and last name as author and quantity as --in stock
+select concat(left(title,10),'...') as shortTitle, concat(authorLastName, ",", authorFirstName) as author, concat(stockQuantity ," in stock") as quantity from books;
+
+#Write a sql query to fetch unique title and author_last_name in ascending order.
+select distinct(title), authorLastName from books  order by authorLastName;
+
+
