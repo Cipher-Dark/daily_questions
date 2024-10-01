@@ -83,4 +83,10 @@ select concat(left(title,10),'...') as shortTitle, concat(authorLastName, ",", a
 #Write a sql query to fetch unique title and author_last_name in ascending order.
 select distinct(title), authorLastName from books  order by authorLastName;
 
+#Find the longest book from the books table. 
+#(longest books means Highest number of pages) 
+select  max(pages) as HighestPage from books;
+
+
+
 
